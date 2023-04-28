@@ -26,9 +26,9 @@ Esse projeto foi realizado junto aos mentores do Programa Desenvolve 2023, com o
 
 ### Screenshot
 
-<div width=400px height=400px>
-
-![](./imagens/previewreadme.png)
+<div>
+   
+   <img src=./imagens/previewreadme.png width=450px height=400px/>
 
 </div>
 
