@@ -1,6 +1,6 @@
 
 
-function Pontuar(patinha, id1, id2, id3, id4, id5, rating) {
+function Pontuar(patinha, id1, id2, id3, id4, id5) {
     
     let p1 = document.getElementById(id1)
     let p2 = document.getElementById(id2)
@@ -18,8 +18,6 @@ function Pontuar(patinha, id1, id2, id3, id4, id5, rating) {
     for(var j = patinha; j < 5; j++){
         patinhas[j].src = ("imagens/patavazia.png")
     }
-
-    document.getElementById(rating).innerHTML = patinha;
 
 }
 
