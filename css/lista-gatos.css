@@ -47,6 +47,7 @@ ul {
    height: 56px;
    border-radius: 100px;
 
+   margin-right: 16px;
 }
 
 .link-notas {
@@ -68,6 +69,10 @@ ul {
       height: 770px;
 
       margin-top: 16px;
+   }
+
+   .img-gatos {
+      margin-right: 0;
    }
 
    .titulo-principal {
