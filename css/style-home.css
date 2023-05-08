@@ -1,0 +1,38 @@
+body {
+   background-color: var(--bg-cor);
+}
+
+.main-index {
+   margin-top: 64px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.titulo-principal-home {
+   width: 752px;
+
+   font-size: 64px;
+   font-weight: 700;
+}
+
+.subtitulo-home {
+   font-size: 48px;
+   color: var(--cinza-claro);
+
+   margin-top: 24px;
+}
+
+@media(max-width:768px) {
+   .titulo-principal-home {
+      width: 100vw;
+      margin-left: 40px;
+      font-size: 48px;
+      font-weight: 500;
+   }
+
+   .subtitulo-home {
+      font-size: 32px;
+      margin-left: 40px;
+   }
+}
