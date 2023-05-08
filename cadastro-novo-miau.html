@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creche Batatinha</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style-menu.css">
+  <link rel="stylesheet" href="./css/cadastro-novo-miau.css" />
+</head>
+
+<body>
+  <header>
+    <div class="menu">
+
+      <a href="index.html"><img src="./imagens/logo.svg" class="logo" /></a>
+
+      <nav>
+
+        <a class="menu-link" id="link1" href="lista-gatos.html">Ver lista de Miaus</a>
+        <a class="menu-link" id="link2" href="cadastro-novo-miau.html">Cadastrar Miau</a>
+
+      </nav>
+    </div>
+  </header>
+
+
+  <main class="container-cadastro-novo-miau-geral">
+    <section class="container-cadastro-novo-miau">
+      <h1 class="h1-cadastro-novo-miau">Cadastro de um novo Miau</h1>
+
+      <label for="Upload" class="imgUpload-cadastro-novo-miau">
+        <img src="./imagens/uploadphoto.svg"
+          alt="Desenho de um gatinho, onde indica o local que deve clicar para fazer o upload da imagem do gatinho que está sendo cadastrado na Creche Batatinha"
+          class="img-cadastro-novo-miau" />
+        <input type="file" id="Upload" class="upload" accept="imagem/*" />
+      </label>
+
+      <form action="" class="input-cadastro-novo-miau">
+        <input type="text" placeholder="Nome do(a) Miau" class="texto-cadastro-novo-miau" required />
+
+        <input type="text" placeholder="Nome da pessoa dona" class="texto-cadastro-novo-miau" required />
+      </form>
+
+      <div class="div-botao-cadastro-novo-miau">
+        <button class="botao-cadastro-novo-miau-cancelar">
+          <a rel="stylesheet" href="" class="texto-botão-cancelar">Cancelar cadastro</a>
+        </button>
+        <button class="botao-cadastro-novo-miau-salvar">
+          <a rel="stylesheet" href="" class="texto-botão-salvar">Salvar dados</a>
+        </button>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

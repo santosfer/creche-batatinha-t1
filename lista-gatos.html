@@ -5,32 +5,48 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Cadastre o gatinho</title>
+   <title>Lista de Miaus</title>
    <link rel="stylesheet" href="./css/reset.css">
    <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/style-menu.css">
    <link rel="stylesheet" href="./css/lista-gatos.css">
 </head>
 
 <body>
-   <main>
-      <section>
+   <header>
+      <div class="menu">
+
+         <a href="index.html"><img src="./imagens/logo.svg" class="logo" /></a>
+
+         <nav>
+
+            <a class="menu-link" id="link1" href="lista-gatos.html">Ver lista de Miaus</a>
+            <a class="menu-link" id="link2" href="cadastro-novo-miau.html">Cadastrar Miau</a>
+
+         </nav>
+      </div>
+   </header>
+
+   <main class="container-principal-lista">
+      <section class="container-section-lista">
 
          <h1 class="titulo-principal">Lista de Miaus</h1>
          <ul>
             <li class="lista-gatos"><img class="img-gatos" src="./imagens/ava.svg" alt="">Buzz<a class="link-notas"
-                  href="#">Lançar notas</a>
+                  href="./avaliacao.html">Lançar notas</a>
             </li>
 
-            <li class="lista-gatos"><img class="img-gatos" src="./imagens/dona.svg" alt="">Dona <a class="link-notas"
-                  href="#">Lançar
-                  notas</a></li>
+            <li class="lista-gatos"><img class="img-gatos" src="./imagens/dona.svg" alt="">Dona<a class="link-notas"
+                  href="./avaliacao.html">Lançar notas</a>
+            </li>
 
-            <li class="lista-gatos"><img class="img-gatos" src="./imagens/floquinho.svg" alt="">Floquinho <a
-                  class="link-notas" href="#">Lançar notas</a></li>
+            <li class="lista-gatos"><img class="img-gatos" src="./imagens/floquinho.svg" alt="">Floquinho<a
+                  class="link-notas" href="./avaliacao.html">Lançar notas</a>
+            </li>
 
-            <li class="lista-gatos"><img class="img-gatos" src="./imagens/rafa.svg" alt="">Rafa <a class="link-notas"
-                  href="#">Lançar
-                  notas</a></li>
+            <li class="lista-gatos"><img class="img-gatos" src="./imagens/rafa.svg" alt="">Rafa<a class="link-notas"
+                  href="./avaliacao.html">Lançar notas</a>
+            </li>
 
          </ul>
 
