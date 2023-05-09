@@ -119,3 +119,44 @@
 .texto-botão-salvar {
   color: #ffffff;
 }
+
+
+/* button salvar */
+
+#salvar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  background: #EB339B;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin: none;
+  border: none;
+  font-family: 'Roboto';
+}
+
+#salvar:hover:enabled {
+  cursor: pointer;
+}
+
+#salvar:disabled {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  background: #9F9F9F;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin: none;
+  border: none;
+  font-family: 'Roboto';
+}
