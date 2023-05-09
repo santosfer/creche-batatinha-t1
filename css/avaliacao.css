@@ -38,6 +38,9 @@ body {
     height: min(80px, 50vw);
     border: none;
     background-image: url('../imagens/avatar.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #nomeGato {

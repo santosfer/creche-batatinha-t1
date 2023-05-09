@@ -1,3 +1,11 @@
+let nomeDoGato = localStorage.getItem('nomeDoGato');
+let imgDoGato = '\'' + localStorage.getItem('imgDoGato') + '\'';
+console.log(nomeDoGato);
+console.log(imgDoGato);
+
+document.getElementById('nomeGato').innerText = nomeDoGato;
+document.getElementById('fotoGato').style.backgroundImage = 'url(' + imgDoGato + ')';
+
 var socializacao_pontuacao = 0;
 var sonequinha_pontuacao = 0;
 var alimentacao_pontuacao = 0;

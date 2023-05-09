@@ -7,6 +7,7 @@
     <title>Listagem de Notas</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-menu.css">
     <link rel="stylesheet" href="./css/avaliacao.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,10 +15,22 @@
     <script src="./scripts/avaliacao.js" defer></script>
 </head>
 <body>
+    <header>
+        <div class="menu">
     
+          <a href="index.html"><img src="imagens/logo.svg" class="logo" /></a>
+    
+          <nav>
+    
+            <a class="menu-link" id="link1" href="lista-gatos.html">Ver lista de Miaus</a>
+            <a class="menu-link" id="link2" href="cadastro-novo-miau.html">Cadastrar Miau</a>
+    
+          </nav>
+        </div>
+      </header>
     <div class="cartao">
         <div class="cabecalho">
-            <button id="seta"><img src="imagens/seta.svg" alt=""></button>
+            <a href="./lista-gatos.html"><button id="seta"><img src="imagens/seta.svg" alt=""></button></a>
             <div id="logotipo">
                 <button id="fotoGato"></button>
                 <p id="nomeGato">Buzz</p>
