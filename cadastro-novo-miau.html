@@ -39,22 +39,26 @@
         <input type="file" id="Upload" class="upload" accept="imagem/*" />
       </label>
 
-      <form action="" class="input-cadastro-novo-miau">
-        <input type="text" placeholder="Nome do(a) Miau" class="texto-cadastro-novo-miau" required />
+      <span id="msgAlerta"></span><br>
 
-        <input type="text" placeholder="Nome da pessoa dona" class="texto-cadastro-novo-miau" required />
+      <form action="" class="input-cadastro-novo-miau" id="cad-miau">
+        <input type="text" placeholder="Nome do(a) Miau" class="texto-cadastro-novo-miau" id="nome" />
+
+        <input type="text" placeholder="Nome da pessoa dona" class="texto-cadastro-novo-miau" id="nome-dono" />
+
+
+        <div class="div-botao-cadastro-novo-miau">
+          <button class="botao-cadastro-novo-miau-cancelar">
+            <a rel="stylesheet" href="index.html" class="texto-botão-cancelar">Cancelar cadastro</a>
+          </button>
+          <button type="submit" class="botao-cadastro-novo-miau-salvar" id="salvar">Salvar dados
+            <!-- <a rel="stylesheet" href="" class="texto-botão-salvar">Salvar dados</a> -->
+          </button>
+        </div>
       </form>
-
-      <div class="div-botao-cadastro-novo-miau">
-        <button class="botao-cadastro-novo-miau-cancelar">
-          <a rel="stylesheet" href="" class="texto-botão-cancelar">Cancelar cadastro</a>
-        </button>
-        <button class="botao-cadastro-novo-miau-salvar">
-          <a rel="stylesheet" href="" class="texto-botão-salvar">Salvar dados</a>
-        </button>
-      </div>
     </section>
   </main>
+  <script src="./scripts/cadastro.js"></script>
 </body>
 
 </html>
