@@ -11,18 +11,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-    <script src="scripts/avaliacao.js"></script>
+    <script src="./scripts/avaliacao.js" defer></script>
 </head>
 <body>
     
     <div class="cartao">
         <div class="cabecalho">
-            <button>seta</button>
+            <button id="seta"><img src="imagens/seta.svg" alt=""></button>
             <div id="logotipo">
-                <img src="imagens/patavazia.png" alt="">
-                <p>Buzz</p>
+                <button id="fotoGato"></button>
+                <p id="nomeGato">Buzz</p>
             </div>
-            <p id="data">dia de hoje</p>
+            <p id="dataAtual">dia de hoje</p>
         </div>
         <hr>
         <div class="socializacao">
@@ -160,14 +160,12 @@
 
                 <a href="javascript:void(0)" onclick="Pontuar(5, 'foto1', 'foto2', 'foto3', 'foto4', 'foto5')">
                 <img src="imagens/patavazia.png" class="patinha" id="foto5" alt="5 patinhas"></a>
-
-                <p class="pontuacao" id="socializacao_pontuacao">0</p>
-            </div>
+            </div>          
         </div>
         <hr>   
         <div id="botoes">
-            <button id="Primario">Imprimir boletim</button>
-            <button id="Secundario">Salvar Notas</button>
+            <button id="imprimir"> Imprimir boletim </button>
+            <button id="salvar">  Salvar notas  </button>
         </div> 
     </div>
 </body>

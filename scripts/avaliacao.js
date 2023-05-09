@@ -1,3 +1,20 @@
+var socializacao_pontuacao = 0;
+var sonequinha_pontuacao = 0;
+var alimentacao_pontuacao = 0;
+var brincadeiras_pontuacao = 0;
+var preguicinha_pontuacao = 0;
+var fotos_pontuacao = 0;
+
+let botaoSalvar = document.getElementById('salvar');
+
+botaoSalvar.disabled = true;
+
+const currentDate = new Date();
+const month = (currentDate.toLocaleString('default', { month: 'long' }));
+const year = currentDate.getFullYear();
+const dateElement = document.getElementById('dataAtual');
+dateElement.textContent = `${month}/${year}`;
+
 
 
 function Pontuar(patinha, id1, id2, id3, id4, id5) {
@@ -10,6 +27,28 @@ function Pontuar(patinha, id1, id2, id3, id4, id5) {
 
     let patinhas = [p1, p2, p3, p4, p5]
     
+    switch (id1) {
+        case 'soci1':
+            socializacao_pontuacao = patinha;
+            break;
+        case 'sone1':
+            sonequinha_pontuacao = patinha;
+            break;
+        case 'alim1':
+            alimentacao_pontuacao = patinha;
+            break;
+        case 'brin1':
+            brincadeiras_pontuacao = patinha;
+            break;
+        case 'preg1':
+            preguicinha_pontuacao = patinha;
+            break;
+        case 'foto1':
+            fotos_pontuacao = patinha;
+            break;
+        default:
+            break;    
+    }
 
     for(var i = 0; i < patinha; i++) {
         patinhas[i].src = ("imagens/patacheia.png")
@@ -19,112 +58,9 @@ function Pontuar(patinha, id1, id2, id3, id4, id5) {
         patinhas[j].src = ("imagens/patavazia.png")
     }
 
+    if (socializacao_pontuacao > 0 && sonequinha_pontuacao > 0 && alimentacao_pontuacao > 0 && brincadeiras_pontuacao > 0 && preguicinha_pontuacao > 0 && fotos_pontuacao > 0) {
+        botaoSalvar.disabled = false;
+    }
+
+
 }
-
-    // var url = window.location;
-    // url = url.toString()
-    // url = url.split("avaliacao.html");
-    // url = url[0];
-
-    // var p1 = document.getElementById(id1).src;
-    // var p2 = document.getElementById(id2).src;
-    // var p3 = document.getElementById(id3).src;
-    // var p4 = document.getElementById(id4).src;
-    // var p5 = document.getElementById(id5).src;
-    // var pontuacao = 0;
-   
-
-
-//     //patinha 5
-//    if (patinha == 5){ 
-//     if (p5 == url + "imagens/patavazia.png") {
-//     document.getElementById(id1).src = "imagens/patacheia.png";
-//     document.getElementById(id2).src = "imagens/patacheia.png";
-//     document.getElementById(id3).src = "imagens/patacheia.png";
-//     document.getElementById(id4).src = "imagens/patacheia.png";
-//     document.getElementById(id5).src = "imagens/patacheia.png";
-//     pontuacao = 5;
-//     } else {
-//     document.getElementById(id1).src = "imagens/patacheia.png";
-//     document.getElementById(id2).src = "imagens/patacheia.png";
-//     document.getElementById(id3).src = "imagens/patacheia.png";
-//     document.getElementById(id4).src = "imagens/patacheia.png";
-//     document.getElementById(id5).src = "imagens/patavazia.png";
-//     pontuacao = 4;
-//    }}
-    
-//     //patinha 4
-//    if (patinha == 4){ 
-//     if (p4 == url + "imagens/patavazia.png") {
-//     document.getElementById(id1).src = "imagens/patacheia.png";
-//     document.getElementById(id2).src = "imagens/patacheia.png";
-//     document.getElementById(id3).src = "imagens/patacheia.png";
-//     document.getElementById(id4).src = "imagens/patacheia.png";
-//     document.getElementById(id5).src = "imagens/patavazia.png";
-//     pontuacao = 4;
-//     } else {
-//     document.getElementById(id1).src = "imagens/patacheia.png";
-//     document.getElementById(id2).src = "imagens/patacheia.png";
-//     document.getElementById(id3).src = "imagens/patacheia.png";
-//     document.getElementById(id4).src = "imagens/patavazia.png";
-//     document.getElementById(id5).src = "imagens/patavazia.png";
-//     pontuacao = 3;
-//    }}
-   
-//    //patinha 3
-//    if (patinha == 3){ 
-//     if (p3 == url + "imagens/patavazia.png") {
-//     document.getElementById(id1).src = "imagens/patacheia.png";
-//     document.getElementById(id2).src = "imagens/patacheia.png";
-//     document.getElementById(id3).src = "imagens/patacheia.png";
-//     document.getElementById(id4).src = "imagens/patavazia.png";
-//     document.getElementById(id5).src = "imagens/patavazia.png";
-//     pontuacao = 3;
-//     } else {
-//     document.getElementById(id1).src = "imagens/patacheia.png";
-//     document.getElementById(id2).src = "imagens/patacheia.png";
-//     document.getElementById(id3).src = "imagens/patavazia.png";
-//     document.getElementById(id4).src = "imagens/patavazia.png";
-//     document.getElementById(id5).src = "imagens/patavazia.png";
-//     pontuacao = 2;
-//    }}
-    
-//    //patinha 2
-//    if (patinha == 2){ 
-//     if (p2 == url + "imagens/patavazia.png") {
-//     document.getElementById(id1).src = "imagens/patacheia.png";
-//     document.getElementById(id2).src = "imagens/patacheia.png";
-//     document.getElementById(id3).src = "imagens/patavazia.png";
-//     document.getElementById(id4).src = "imagens/patavazia.png";
-//     document.getElementById(id5).src = "imagens/patavazia.png";
-//     pontuacao = 2;
-//     } else {
-//     document.getElementById(id1).src = "imagens/patacheia.png";
-//     document.getElementById(id2).src = "imagens/patavazia.png";
-//     document.getElementById(id3).src = "imagens/patavazia.png";
-//     document.getElementById(id4).src = "imagens/patavazia.png";
-//     document.getElementById(id5).src = "imagens/patavazia.png";
-//     pontuacao = 1;
-//    }}
-    
-//     //patinha 1
-//    if (patinha == 1){ 
-//     if (p1 == url + "imagens/patavazia.png") {
-//     document.getElementById(id1).src = "imagens/patacheia.png";
-//     document.getElementById(id2).src = "imagens/patavazia.png";
-//     document.getElementById(id3).src = "imagens/patavazia.png";
-//     document.getElementById(id4).src = "imagens/patavazia.png";
-//     document.getElementById(id5).src = "imagens/patavazia.png";
-//     pontuacao = 1;
-//     } else {
-//     document.getElementById(id1).src = "imagens/patavazia.png";
-//     document.getElementById(id2).src = "imagens/patavazia.png";
-//     document.getElementById(id3).src = "imagens/patavazia.png";
-//     document.getElementById(id4).src = "imagens/patavazia.png";
-//     document.getElementById(id5).src = "imagens/patavazia.png";
-//     pontuacao = 0;
-//    }}
-    
-//     document.getElementById(rating).innerHTML = pontuacao;
-    
-//    }
