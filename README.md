@@ -18,7 +18,9 @@ O programa desenvolve é um programa gratuito de formação e inclusão de talen
 - [Nosso processo](#nosso-processo)
   - [Tecnologias usadas](#tecnologias-usadas)
   - [O que aprendi](#o-que-aprendi)
-- [Autores](#autores)
+- [Quem contribuiu para o projeto](#colaboradores)
+   - [Autores](#autores)
+   - [Mentores](#mentores)
 
 ## Visão Geral
 
@@ -44,9 +46,17 @@ Esse projeto foi realizado junto aos mentores do Programa Desenvolve 2023, com o
 
  ### O que aprendi
  ⚠️em desenvolvimento⚠️
+ 
+ 
+ ## Colaboradores
 
- ## Autores
+ ### Autores
  - [Fernanda](https://github.com/santosfer)
  - [Leandro](https://github.com/LeandroMS011)
  - [Paulo](https://github.com/pausa109)
  - [Vinícius](https://github.com/ViniciusDali) 
+
+### Mentores
+- [Bianca](https://www.linkedin.com/in/biancacpereira/)
+- [Luiz](https://www.linkedin.com/in/lppjunior/)
+- [Marcelo](https://www.linkedin.com/in/mentorvelloso/)
